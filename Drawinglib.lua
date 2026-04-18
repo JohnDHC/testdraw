@@ -24,21 +24,7 @@ local listfiles = listfiles
 local isfile = isfile
 local makefolder = makefolder
 
-if not isfolder("FelixDrawingLib") then
-    makefolder("FelixDrawingLib")
-end
 
-if not isfolder("FelixDrawingLib/assets") then
-    makefolder("FelixDrawingLib/assets")
-end
-
-if not isfile("FelixDrawingLib/assets/animegirl.jpg") then
-    writefile("FelixDrawingLib/assets/animegirl.jpg", net({
-
-        Url = "https://raw.githubusercontent.com/I2345/FelixDrawinglib/main/assets/anime.jpg",
-        Method = "GET",
-    }).Body)
-end
 
 local HeadOffset = Vector3.new(0,.5,0)
 local LegOffset = Vector3.new(0,3,0)
